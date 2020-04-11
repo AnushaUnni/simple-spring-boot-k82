@@ -16,6 +16,6 @@ apiVersion: apps/v1
       spec:
         containers:
           - name: simple-controller
-            image: anushaunni/simple_spring_boot
+            image: anushaunni/springboot
             ports:
               - containerPort: 9001
