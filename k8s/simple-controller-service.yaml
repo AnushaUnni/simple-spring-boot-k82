@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-controller-service
+spec:
+  type: ClusterIp
+  selector:
+    app: simple-controller
+  ports:
+    - port: 9002
+      targetPort: 9001

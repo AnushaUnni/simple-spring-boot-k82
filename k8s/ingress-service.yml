@@ -1,0 +1,15 @@
+apiVersion: extensions/v1betal
+kind: Ingress
+metadata:
+  name: localingress
+  annotations:
+    kubernetes.io/inggres.class : nginx
+    nginx.ingress.kubernets.io/rewrite-target: /
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /
+            backend:
+              serviceName: simple-controller-service
+              servicePort: 9002
