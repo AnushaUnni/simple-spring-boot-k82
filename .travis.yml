@@ -27,6 +27,6 @@ script:
 
 deploy:
   provider: script
-  script: bash ./deploy.sh
+  script: bash ./deployv2.sh
   on:
     branch: master
