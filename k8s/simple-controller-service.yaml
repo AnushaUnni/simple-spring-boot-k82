@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: simple-controller-service
 spec:
-  type: ClusterIp
+  type: ClusterIP
   selector:
     app: simple-controller
   ports:
