@@ -1,21 +1,21 @@
 apiVersion: apps/v1
-  kind: Deployment
-  metadata:
-    name: simple-controller-deployment
-    labels:
+kind: Deployment
+metadata:
+  name: simple-controller-deployment
+  labels:
+    app: simple-controller
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
       app: simple-controller
-  spec:
-    replicas: 1
-    selector:
-      matchLabels:
+  template:
+    metadata:
+      labels:
         app: simple-controller
-    template:
-      metadata:
-        labels:
-          app: simple-controller
-      spec:
-        containers:
-          - name: simple-controller
-            image: anushaunni/springboot
-            ports:
-              - containerPort: 9001
+    spec:
+      containers:
+        - name: simple-controller
+          image: anushaunni/springboot
+          ports:
+            - containerPort: 9001
