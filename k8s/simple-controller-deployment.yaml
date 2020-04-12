@@ -19,4 +19,4 @@ spec:
           image: anushaunni/springboot
           imagePullPolicy: Always
           ports:
-            - containerPort: 9001
+            - containerPort: 9000
