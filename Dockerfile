@@ -3,7 +3,7 @@ FROM openjdk:8-jdk-alpine as javabuilder
 # Set the current working directory inside the image
 WORKDIR /app
 # The application's jar file
-ARG JAR_FILE=simple-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/simple-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
 ADD ${JAR_FILE} simple.jar
 # Add Maintainer Info

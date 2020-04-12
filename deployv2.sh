@@ -1,3 +1,5 @@
+pwd
+ls -lrt
 docker build -t anushaunni/springboot:latest -t anushaunni/springboot:$SHA .
 docker push anushaunni/springboot:latest
 docker push anushaunni/springboot:$SHA
