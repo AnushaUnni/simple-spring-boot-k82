@@ -2,6 +2,7 @@
 FROM openjdk:8-jdk-alpine as javabuilder
 # Set the current working directory inside the image
 WORKDIR /app
+COPY deployv2.sh /app/deployv2.sh
 # The application's jar file
 ARG JAR_FILE=target/simple-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
