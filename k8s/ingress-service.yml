@@ -1,4 +1,4 @@
-apiVersion: extensions/v1betal
+apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: local-ingress
